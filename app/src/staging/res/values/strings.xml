@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--DTS検証用-->
+    <string name="layout_json_url">https://test-web.l-tike.com/lhp/app2_test.json</string>
+    <string name="lweb_login_url">https://test-web.l-tike.com/</string>
+    <string name="l_web_auth_url">https://test-web.l-tike.com/lweb/login/authreq</string>
+	<string name="funnel_push_app_key">097502501118</string>
+    <string name="firebase_senderid">51030851599</string>
+    <string-array name="sso_url">
+        <item>https://stage7.hmv.co.jp/login/login/?AUTHTYPE=</item>
+        <item>https://id.lawson.jp/lweb/oa/OA_Authorize.php</item>
+        <item>https://stage7.hmv.co.jp/login/accesstoken</item>
+    </string-array>
+    <string name="sso_login_url">https://stage7.hmv.co.jp/login/login/</string>
+    <string name="sso_logout_url">https://stage7.hmv.co.jp/login/authout/</string>
+
+</resources>

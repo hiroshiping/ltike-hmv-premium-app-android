@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "785464234321",
+    "firebase_url": "https://lhp-android-dev-61199.firebaseio.com",
+    "project_id": "lhp-android-dev-61199",
+    "storage_bucket": "lhp-android-dev-61199.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785464234321:android:056c62ec648e7e76980370",
+        "android_client_info": {
+          "package_name": "jp.co.lawson.lhe.PremiumMember"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785464234321-ed5b4vd0ahhpcn02jm6vpc4uieddvsmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr78Xdb2M414RMPJPiva-NpjT-QWcsP-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785464234321-ed5b4vd0ahhpcn02jm6vpc4uieddvsmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

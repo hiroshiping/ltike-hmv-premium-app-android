@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006CB7">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_icon_heigth"
+        android:background="@color/toolbarBackgroundColor"
+        android:elevation="3dp"
+        app:contentInsetStart="0dp"
+        app:subtitleTextColor="#fff"
+        app:titleTextColor="#fff">
+
+        <RelativeLayout
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="@dimen/tool_bar_icon_heigth"
+                android:layout_height="@dimen/tool_bar_icon_heigth"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_tab_menu"
+                android:padding="5dp" />
+
+            <ImageView
+                android:id="@+id/iv_message"
+                android:layout_width="@dimen/tool_bar_icon_heigth"
+                android:layout_height="@dimen/tool_bar_icon_heigth"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_menu"
+                android:background="@drawable/selector_tab_message"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="68dp"
+                android:layout_toRightOf="@id/iv_message"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_home_title"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/tool_bar_icon_heigth"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_home_title"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/activity_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/appBg"
+        tools:context="jp.co.lhe.lhememberapp.activities.HomeActivity">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="#006CB7">
+
+            <RadioGroup
+                app:layout_constraintHorizontal_weight="3"
+                android:id="@+id/rg_tab1"
+                android:layout_width="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/rg_tab2"
+                android:layout_height="@dimen/tab_icon_height"
+                android:background="#006CB7"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_present"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/tab_icon_height"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/selector_tab_present"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingTop="1dp"
+                    android:textSize="0sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_ticket"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/tab_icon_height"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_tab_ticket"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingTop="1dp"
+                    android:textSize="0sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_home"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/tab_icon_height"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@mipmap/bg_footbar"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingTop="1dp"
+                    android:textSize="0sp" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rg_tab2"
+                app:layout_constraintHorizontal_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/tab_icon_height"
+                app:layout_constraintLeft_toRightOf="@id/rg_tab1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="#006CB7"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_movie"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/tab_icon_height"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@mipmap/ic_movie"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingTop="1dp"
+                    android:textSize="0sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_bookes"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/tab_icon_height"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@mipmap/ic_books"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingTop="1dp"
+                    android:textSize="0sp" />
+
+            </RadioGroup>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <FrameLayout
+
+            android:id="@+id/activity_home_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/cl_tab"></FrameLayout>
+
+
+        <!-- WebView -->
+        <FrameLayout
+            android:id="@+id/activity_home_contents_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/cl_tab"
+            android:visibility="gone"></FrameLayout>
+
+        <!-- Push通知用WebView -->
+        <FrameLayout
+            android:id="@+id/activity_home_push_contents_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/cl_tab"
+            android:visibility="gone"></FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_above="@id/cl_tab"
+            android:background="@mipmap/tab_shadow" />
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/civ_home"-->
+        <!--android:layout_width="66dp"-->
+        <!--android:layout_height="66dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:checked="false"-->
+        <!--android:enabled="false"-->
+        <!--android:src="@drawable/selector_tab_home"-->
+        <!--app:civ_border_color="#006CB7"-->
+        <!--app:civ_border_width="2dp"-->
+        <!--app:civ_fill_color="#006CB7" />-->
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/civ_home"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-4dp"
+            android:checked="false"
+            android:enabled="false"
+            android:src="@drawable/selector_tab_home"
+            app:civ_border_color="#006CB7"
+            app:civ_border_width="6dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#999999"
+            app:civ_shadow_radius="4" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3494E6"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_triangle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/shape_reverse_triangle" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="@dimen/menu_margin"
+                android:layout_marginRight="@dimen/menu_margin"
+                android:id="@+id/rv_menu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_triangle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="@dimen/menu_margin"
+                android:layout_marginRight="@dimen/menu_margin"
+                android:id="@+id/rv_menu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_menu1"
+                android:layout_centerHorizontal="true" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_menu3"
+                android:layout_marginLeft="@dimen/menu_margin"
+                android:layout_marginRight="@dimen/menu_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_menu2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+
+            <ImageView
+                android:id="@+id/iv_menu_close"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/ic_menu_close" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

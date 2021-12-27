@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.co.lhe.lhememberapp.fragments.NoticeDetailFragment">
+
+    <!--&lt;!&ndash; Action Bar &ndash;&gt;-->
+    <!--<include-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/sub_view_action_bar"-->
+        <!--layout="@layout/sub_view_action_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/action_bar_height"></include>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/fragment_notice_detail_send_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textSize="@dimen/font_size_s"
+                tools:text="2016年11月10日"/>
+
+            <TextView
+                android:id="@+id/fragment_notice_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="@dimen/font_size_s"
+                android:paddingLeft="@dimen/app_cell_padding"
+                android:paddingRight="@dimen/app_cell_padding"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                tools:text="タイトル"/>
+            <TextView
+                android:id="@+id/fragment_notice_detail_body"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/font_size_s"
+                android:padding="@dimen/app_cell_padding"
+                tools:text="今般、悪意のある第三者が、不正に取得したID・パスワードを使い、様々なインターネットサイトで本人に
+なりすまし不正なログインを行うという事例が複数の企業において報告されております。
+ローチケHMVのお客様におかれましては、このような不正ログインを未然に防ぐため、定期的に
+パスワードを変更いただきますようお願い申し上げます。
+
+この度のお知らせの内容につきまして、何かご不明な点がございましたら、
+ローチケHMVカスタマーセンターまでお問合せいただきますようお願い申し上げます。
+
+今後ともローチケHMVをご愛顧の程、何卒よろしくお願い申し上げます。
+"
+                />
+
+            <TextView
+                android:id="@+id/fragment_notice_detail_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="@dimen/activity_vertical_margin"
+                tools:text="https://www.google.co.jp/"/>
+        </LinearLayout>
+
+    </ScrollView>
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="42dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/selector_wv_back" />
+
+</RelativeLayout>

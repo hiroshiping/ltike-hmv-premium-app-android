@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="service_top_pick_up_height">109dp</dimen>
+    <!-- 322px -->
+    <dimen name="service_top_banner">161dp</dimen>
+    <!-- 226px -->
+    <dimen name="service_top_pick_up">113dp</dimen>
+    <!-- 200px -->
+    <dimen name="service_top_add_banner">100dp</dimen>
+
+    <dimen name="font_size_carousel">12sp</dimen>
+    <dimen name="carousel_text_height">30dp</dimen>
+    <dimen name="service_top_menu_padding">5dp</dimen>
+
+    <dimen name="service_top_menu_title_text_height">15dp</dimen>
+    <dimen name="service_top_menu_title_text_size">10sp</dimen>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff9900</color>
+    <color name="prefectureHeader">#fff3e0</color>
+    <color name="appText">#333333</color>
+    <color name="appBg">#ffffff</color>
+    <color name="noticeBadgeText">#ffffff</color>
+    <color name="noticeAlreadyRead">#5a5a5a</color>
+
+    <color name="divider">#cccccc</color>
+    <color name="dividerColor">#cccccc</color>
+    <color name="menuBlue">#45b3e3</color>
+    <color name="menuPink">#f9729c</color>
+    <color name="menuGreen">#3bc974</color>
+    <color name="menuSpace">#efefef</color>
+    <color name="menuTicketInnerBlock">#e7f7fe</color>
+    <color name="menuOtokuInnerBlock">#ffe6ee</color>
+    <color name="menuDigitalInnerBlock">#d4faea</color>
+    <color name="menuImageBlockBg">#eceaea</color>
+    <color name="menuBannerTextBg">#f3f3f3</color>
+    <color name="serviceTopMenuBg">#eeeb3e</color>
+    <color name="serviceTopMenuText">#2c9abb</color>
+    <color name="carouselTitle">#505050</color>
+    <color name="carouselBackImage">#f8f8f8</color>
+    <color name="carouselDescription">#383838</color>
+    <color name="userInfoQBg">#f3f3f3</color>
+    <color name="loginProblemText">#109ad7</color>
+    <color name="borderGray">#b7b7b7</color>
+
+    <color name="webViewActionBarBg">#333333</color>
+
+    <color name="toolbarBackgroundColor">#006CB7</color>
+</resources>

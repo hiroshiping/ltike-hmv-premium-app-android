@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBg"
+    android:orientation="vertical"
+    tools:context="jp.co.lhe.lhememberapp.activities.UserInfoActivity">
+    <FrameLayout
+        android:id="@+id/activity_user_info_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></FrameLayout>
+
+    <!--&lt;!&ndash; Action Bar:ログイン画面から遷移した場合 &ndash;&gt;-->
+    <!--<include-->
+        <!--android:id="@+id/app_action_bar"-->
+        <!--layout="@layout/app_action_bar"-->
+        <!--android:visibility="gone"-->
+        <!--tools:visibility="visible"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/action_bar_height"></include>-->
+
+    <!--&lt;!&ndash; Action Bar:設定画面から遷移した場合 &ndash;&gt;-->
+    <!--<include-->
+        <!--android:id="@+id/sub_view_action_bar"-->
+        <!--layout="@layout/sub_view_action_bar"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/action_bar_height">-->
+    <!--</include>-->
+    <!--<View-->
+        <!--android:id="@+id/sub_view_action_bar_divider"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:background="@color/dividerColor"></View>-->
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/app_action_bar">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/activity_sign_up"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+            <!--android:paddingBottom="@dimen/app_margin_30"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/font_size_m"-->
+                <!--android:text="@string/user_info_title"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:gravity="center_horizontal"/>-->
+
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/font_size_m"-->
+                <!--android:layout_marginTop="@dimen/app_margin_25"-->
+                <!--android:padding="@dimen/activity_vertical_margin"-->
+                <!--android:background="@color/userInfoQBg"-->
+                <!--android:text="@string/user_info_title_fav_prefecture"/>-->
+
+            <!--&lt;!&ndash; 都道府県 &ndash;&gt;-->
+            <!--<include-->
+                <!--android:id="@+id/user_info_prefecture_hokkaido"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/component_prefecture">-->
+            <!--</include>-->
+            <!--<include-->
+                <!--android:id="@+id/user_info_prefecture_tohoku"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/component_prefecture">-->
+            <!--</include>-->
+            <!--<include-->
+                <!--android:id="@+id/user_info_prefecture_kanto_koshinetsu"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/component_prefecture">-->
+            <!--</include>-->
+            <!--<include-->
+                <!--android:id="@+id/user_info_prefecture_chubu_tokai"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/component_prefecture">-->
+            <!--</include>-->
+            <!--<include-->
+                <!--android:id="@+id/user_info_prefecture_kinki_hokuriku"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/component_prefecture">-->
+            <!--</include>-->
+            <!--<include-->
+                <!--android:id="@+id/user_info_prefecture_chugoku_shikoku"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/component_prefecture">-->
+            <!--</include>-->
+            <!--<include-->
+                <!--android:id="@+id/user_info_prefecture_kyusyu_okinawa"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/component_prefecture">-->
+            <!--</include>-->
+
+            <!--&lt;!&ndash; 利用したいサービス &ndash;&gt;-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/font_size_m"-->
+                <!--android:layout_marginTop="@dimen/app_margin_25"-->
+                <!--android:layout_marginBottom="@dimen/activity_horizontal_margin"-->
+                <!--android:padding="@dimen/activity_vertical_margin"-->
+                <!--android:background="@color/userInfoQBg"-->
+                <!--android:text="@string/user_info_title_fav_service"/>-->
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/component_favorite_check_box_block"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--&gt;-->
+                <!--<jp.co.lhe.lhememberapp.ui.views.ExpandableHeightGridView-->
+                    <!--android:id="@+id/component_favorite_check_box_grid_view"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:paddingLeft="@dimen/app_cell_padding"-->
+                    <!--android:paddingRight="@dimen/app_cell_padding"-->
+                    <!--android:numColumns="2">-->
+                <!--</jp.co.lhe.lhememberapp.ui.views.ExpandableHeightGridView>-->
+            <!--</LinearLayout>-->
+            <!--<Button-->
+                <!--android:id="@+id/activity_sign_up_next_btn"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/app_margin_30"-->
+                <!--android:background="@mipmap/user_info_regist_btn"-->
+                <!--/>-->
+
+
+            <!--<Button-->
+                <!--android:id="@+id/activity_sign_up_later_btn"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/app_margin_30"-->
+                <!--android:background="@mipmap/user_info_later_btn"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/activity_user_info_note"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:textSize="@dimen/font_size_m"-->
+                <!--android:text="@string/user_info_information"/>-->
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>

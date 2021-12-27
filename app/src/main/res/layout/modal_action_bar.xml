@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/webViewActionBarBg"
+    android:gravity="center_vertical">
+    <ImageButton
+        android:id="@+id/modal_action_bar_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/webViewActionBarBg"
+        android:src="@mipmap/ic_clear_black_24dp_white" />
+    <ImageButton
+        android:id="@+id/modal_action_bar_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@mipmap/ic_arrow_left_black_web_view"
+        />
+    <ImageButton
+        android:id="@+id/modal_action_bar_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:background="@mipmap/ic_arrow_left_white_web_view"
+        />
+    <Space
+        android:id="@+id/modal_action_bar_space"
+        android:layout_width="@dimen/action_bar_icon_space"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/modal_action_bar_back_btn"
+        />
+    <ImageButton
+        android:id="@+id/modal_action_bar_forward_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_toRightOf="@+id/modal_action_bar_space"
+        android:background="@mipmap/ic_arrow_right_white_web_view"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_mode">1</string>
+
+    <!--MOCK API-->
+    <string name="layout_json_url">https://private-5be1a-premiummember.apiary-mock.com//layout2.json</string>
+    <string name="lweb_login_url">https://private-5be1a-premiummember.apiary-mock.com/</string>
+    <string name="l_web_auth_url">https://private-5be1a-premiummember.apiary-mock.com/lweb/login/authreq</string>
+    <string name="funnel_push_app_key">097502501118</string>
+    <string name="firebase_senderid">785464234321</string>
+
+</resources>

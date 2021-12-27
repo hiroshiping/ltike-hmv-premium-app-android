@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="list_open_from">0</integer>
+    <integer name="list_open_to">180</integer>
+    <integer name="list_close_from">180</integer>
+    <integer name="list_close_to">360</integer>
+</resources>

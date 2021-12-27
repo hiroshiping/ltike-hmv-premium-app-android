@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="jp.co.lhe.lhememberapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- AccountManagerでアカウント管理を行う場合 start -->
+    <!--&lt;!&ndash; Authenticatorを実装するのに必要なPermission &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <!--<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />-->
+    <!--&lt;!&ndash; アカウントの編集 &ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />-->
+    <!-- AccountManagerでアカウント管理を行う場合 end -->
+
+    <!-- gcm -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <permission
+        android:name="${applicationId}.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".LMApplication"
+        android:allowBackup="false"
+        tools:replace="android:allowBackup"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false" />
+        <service
+            android:name=".accountmanager.authenticator.AuthenticationService" android:exported="false" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <activity android:name=".activities.SplashActivity"
+            android:theme="@style/SplashScreen"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.LoginActivity"
+            android:launchMode="singleTask"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.UserInfoActivity"
+            android:launchMode="singleTask"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.BaseActivity"
+            android:launchMode="singleTask"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activities.HomeActivity"
+            android:launchMode="singleTask"
+            android:exported="false"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service android:name=".service.LogoutService"/>
+        <!--FCM-->
+        <service
+            android:name=".service.FunnelPushForFcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

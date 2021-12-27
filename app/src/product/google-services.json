@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "802800693484",
+    "firebase_url": "https://lhp-android-1c7ec.firebaseio.com",
+    "project_id": "lhp-android-1c7ec",
+    "storage_bucket": "lhp-android-1c7ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802800693484:android:1197bd78235f43b7",
+        "android_client_info": {
+          "package_name": "jp.co.lawson.lhe.PremiumMember"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802800693484-0uqkbfvkpj143uu1ah82qqnfcslrvits.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jp.co.lawson.lhe.PremiumMember",
+            "certificate_hash": "a83c2026fedf05d07ec78f79ca4ea2b5168809b6"
+          }
+        },
+        {
+          "client_id": "802800693484-51l94dt2iktvhobcatqk0jqsng0oka34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiR0v-ehQwpLBfhoVlwhjqBV00Jz66R8U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802800693484-51l94dt2iktvhobcatqk0jqsng0oka34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

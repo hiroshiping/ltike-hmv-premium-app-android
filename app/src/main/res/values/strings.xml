@@ -1,0 +1,419 @@
+<resources>
+    <string name="app_name">LHプレミアム</string>
+    <string name="funnel_push_app_key">894913238744</string>
+    <string name="firebase_senderid">802800693484</string>
+
+    <string name="layout_json_url">https://cdn.l-tike.com/lhp/app2.json</string>
+    <string name="lweb_login_url">https://l-tike.com/</string>
+    <string name="play_store_path">market://details?id=</string>
+    <!-- タブホ -->
+    <string name="app_unlimited_contents">jp.co.optim.unlimitedcontents</string>
+    <string name="app_unlimited_contents_uri">unlimitedcontents://applink</string>
+
+
+    <!-- 暗号化_第二パスワード -->
+    <string name="second_password">1ca418790fac2acad5a68d6639a94f48</string>
+
+    <!-- image not available -->
+    <string name="image_not_available_url">http://img.hmv.co.jp//image/jacket/190/01/3/2/530.jpg</string>
+
+    <string name="l_web_auth_url">https://l-tike.com/lweb/login/authreq</string>
+
+    <string name="l_web_account_mail_address">MAIL_ADDRS</string>
+    <string name="l_web_account_mail_password">PWD</string>
+
+    <string name="app_mode_default">0</string>
+    <string name="app_mode_develop">1</string>
+    <string name="app_mode_production">2</string>
+
+    <string name="app_mode">0</string>
+
+    <string name="const_shared_preference_name">lhe_mem_app_preference</string>
+
+    <string name="activity_param_auth_name">auth_name</string>
+    <string name="activity_param_auth_token">auth_token</string>
+    <string name="activity_param_auth_password">auth_password</string>
+
+    <string name="user_info_param">user-info-param</string>
+    <string name="user_info_ex_screen_login">login</string>
+    <string name="user_info_ex_screen_settings">settings</string>
+
+    <string name="notice_count_over_99">99+</string>
+
+    <string name="terms_apply_message">アプリ利用規約に同意する</string>
+
+    <string name="user_info_title">あなたが欲しい\n最新情報をお届けします！</string>
+    <string name="user_info_title_fav_prefecture">情報取得したい都道府県を教えてください。\n（複数選択可）</string>
+    <string name="user_info_title_fav_service">利用したいサービスを教えてください。\n（複数選択可）</string>
+    <string name="user_info_fav_service_win_rate_up">先行抽選特典</string>
+    <string name="user_info_fav_service_leisure_ticket">レジャー施設割引</string>
+    <string name="user_info_fav_service_movie_ticket">映画館割引</string>
+    <string name="user_info_fav_service_ticket_guard">チケット安心サポート</string>
+    <string name="user_info_fav_service_coupon">500円分クーポン</string>
+    <string name="user_info_fav_service_present">応募（招待・懸賞）</string>
+    <!-- まだサービスを提供できないので一旦アンケート項目から外す 再開時はQuestionFragment.javaも合わて改修すること -->
+    <!--<string name="user_info_fav_service_music_streaming">音楽を聴く</string>-->
+    <string name="user_info_fav_service_free_magazine">電子コミックを読む</string>
+    <string name="user_info_fav_service_video">映画・ドラマを観る</string>
+    <string name="user_info_information">※後で登録をする場合は、\n「設定」から登録が可能です。</string>
+
+    <string name="user_info_later_btn">後で登録する</string>
+    <string name="user_info_next_btn">登録</string>
+
+    <string name="login_title">ご利用には、ローチケHMVプレミアムへのお申込みが必要です。お申込みが完了していない方は、ローソンチケット（WEBサイト）よりお申込みをお願いいたします。https://l-tike.com/lhp/premium/</string>
+    <string name="login_sign_up_title">新規会員登録</string>
+    <string name="login_title_mail_address">メールアドレス</string>
+    <string name="login_title_password">パスワード</string>
+    <string name="login_title_hint_mail_address">メールアドレスを入力してください</string>
+    <string name="login_title_hint_password">パスワードを入力してください</string>
+    <string name="login_login_btn">ログイン</string>
+    <string name="login_tutorial_btn">サービス内容を見る</string>
+    <string name="login_link_terms">利用規約はこちら</string>
+    <string name="login_title_any_problems_upper">パスワードを忘れた方など</string>
+    <string name="login_title_any_problems_lower">お困りの方は</string>
+    <string name="login_title_any_problems_end">こちら</string>
+    <string name="login_title_any_problems_title">お困りの場合</string>
+    <string name="login_sign_up_info">サービスのご利用には、ローソンWEB会員登録とサービス申込みが 必要です。</string>
+    <string name="login_sign_up_btn">ローソンWEB会員登録</string>
+    <string name="login_info_message">ローチケHMVプレミアムをご利用になるには、\n サービスへの申し込みが必要です。</string>
+    <string name="login_first_message">LHプレミアムは、ローチケHMVプレミアム会員の方のみご利用いただけます。</string>
+
+
+    <string name="setting_title">設定</string>
+    <string name="setting_title_settings">設定</string>
+    <string name="setting_title_user_info">情報取得地域・サービスの変更</string>
+    <string name="setting_title_mypage">マイページ</string>
+    <string name="setting_title_logout">ログアウト</string>
+    <string name="setting_login_btn">ログイン</string>
+    <string name="setting_logout_btn">ログアウト</string>
+    <string name="setting_app_version">バージョン情報</string>
+
+    <string name="setting_menu_user_info">プレミアムサービス契約情報</string>
+    <string name="setting_menu_user_info_description">（決済情報変更・プラン変更・契約停止）</string>
+    <string name="setting_menu_my_page">会員基本情報</string>
+    <string name="setting_menu_my_page_description">（住所・電話番号・メールアドレス・パスワード変更・チケット申込履歴） \n ※ローソンWEB会員の情報も変更となります</string>
+
+
+    <string name="push_setting_title">プッシュ通知設定</string>
+    <string name="push_setting_title_info">あなたが欲しい最新情報をお届けします。</string>
+    <string name="push_setting_sub_title">プッシュ通知受信時の動作</string>
+    <string name="push_setting_allow_push_label">配信を許可</string>
+    <string name="push_setting_allow_sound_label">サウンドを再生</string>
+    <string name="push_setting_allow_vibration_label">バイブレーション</string>
+
+    <string name="push_setting_label_notification">配信を許可</string>
+    <string name="push_setting_label_sound">サウンドを再生</string>
+    <string name="push_setting_label_vibration">バイブレーション</string>
+
+
+    <string name="activity_param_terms">require-terms-apply-btn</string>
+    <string name="activity_param_url">move-to-page-url</string>
+    <string name="activity_param_title">web-page-title</string>
+
+
+    <string name="error_account_exists">既にアカウントが登録されています</string>
+    <string name="error_account_not_exists">指定されたアカウントは存在しません</string>
+
+    <string name="error_login_title">ログインに失敗しました。</string>
+    <string name="error_login_message">メールアドレスもしくはパスワードに誤りがあります。または、アカウントがロックされている可能性があります。\n※ご利用いただくには、ローソンWEB会員登録とローチケHMVプレミアムへのお申込が必要です。</string>
+
+    <string name="error_view_timeout">一定時間操作がなかったため、現在の閲覧画面を終了します。</string>
+
+    <!-- ご利用案内 -->
+    <string name="guidance_title">ご利用方法</string>
+    <string name="guidance_how_to_label">サービス利用方法</string>
+    <string name="guidance_faq_label">よくある質問</string>
+    <string name="guidance_terms_label">利用規約</string>
+    <string name="policy_terms_label">プライバシーポリシー</string>
+    <string name="license_terms_label">ソフトウェアライセンス</string>
+    <string name="license_text">Open Source License Notices</string>
+    <string name="license_Otto"><b>Otto</b>\n\nCopyright 2012 Square, Inc.\nCopyright 2010 Google, Inc.\n\nLicensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="license_gson"><b>gson</b>\n\nCopyright 2008 Google Inc.\n\nLicensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="license_retrofit"><b>retrofit</b>\n\nCopyright 2013 Square, Inc.\n\nLicensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="license_OkHttp"><b>OkHttp</b>\n\nLicensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="license_franmontiel"><b>franmontiel</b>\n\nCopyright 2016 Francisco José Montiel Navarro\n\nLicensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="license_logger"><b>logger</b>\n\nCopyright 2018 Orhan Obut\n\nLicensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="license_RxJava"><b>RxJava</b>\n\nCopyright &#169; 2016-present, RxJava Contributors.\n\nLicensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="license_CircleImageView"><b>CircleImageView</b>\n\nCopyright 2014 - 2018 Henning Dodenhof\n\nLicensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="license_butterknife"><b>butterknife</b>\n\nCopyright 2013 Jake Wharton\n\nLicensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="license_glide"><b>glide</b>\n\nLicense for everything not in third_party and not otherwise marked:\n\nCopyright 2014 Google, Inc. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, arepermitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY GOOGLE, INC. "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL GOOGLE, INC. OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of Google, Inc.\n\nLicense for third_party/disklrucache:\n\nCopyright 2012 Jake Wharton\nCopyright 2011 The Android Open Source Project\n\nLicensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and limitations under the License.\n\nLicense for third_party/gif_decoder:\n\nCopyright &#169; 2013 Xcellent Creations, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish,distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\n
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nLicense for third_party/gif_encoder/AnimatedGifEncoder.java and third_party/gif_encoder/LZWEncoder.java:\n\nNo copyright asserted on the source code of this class. May be used for any purpose, however, refer to the Unisys LZW patent for restrictions on use of the associated LZWEncoder class. Please forward any corrections to kweiner@fmsware.com.\n\nLicense for third_party/gif_encoder/NeuQuant.java\n\nCopyright &#169; 1994 Anthony Dekker\n\nNEUQUANT Neural-Net quantization algorithm by Anthony Dekker, 1994. See "Kohonen neural networks for optimal colour quantization" in "Network:Computation in Neural Systems" Vol. 5 (1994) pp 351-367. for a discussion of the algorithm.\n\nAny party obtaining a copy of these files from the author, directly or indirectly, is granted, free of charge, a full and unrestricted irrevocable,world-wide, paid up, royalty-free, nonexclusive right and license to deal in this software and documentation files (the "Software"), including without limitation the rights to use, copy, modify, merge, publish, distribute,sublicense, and/or sell copies of the Software, and to permit persons who receive copies from any such party to do so, with the only requirement being that this copyright notice remain intact.</string>
+    <!-- お知らせ -->
+    <string name="notice_title">お知らせ</string>
+    <string name="notice_about_app">アプリに関するお知らせ</string>
+    <string name="notice_about_ticket">チケットに関するお知らせ</string>
+    <string name="notice_other">その他のお知らせ</string>
+
+    <!-- 設定メニュー -->
+    <string name="activity_setting_menu_user_info">setting-menu-01</string>
+    <string name="activity_setting_menu_question">setting-menu-02</string>
+    <string name="activity_setting_menu_push">setting-menu-03</string>
+    <string name="activity_setting_menu_law_ticket">setting-menu-04</string>
+    <string name="activity_setting_menu_hmv_mypage">setting-menu-05</string>
+    <string name="activity_setting_menu_logout">setting-menu-06</string>
+
+
+    <!-- サービストップ -->
+    <string name="service_top_news_label">お知らせ</string>
+    <string name="service_top_category_pink">1</string>
+    <string name="service_top_category_blue">2</string>
+    <string name="service_top_category_green">3</string>
+    <string name="service_top_category_color_pink">#f9729c</string>
+    <string name="service_top_category_color_blue">#45b3e3</string>
+    <string name="service_top_category_color_green">#3bc974</string>
+
+    <string name="service_top_camp_more_info">詳細はこちら</string>
+
+    <string name="service_top_error_dialog_title">ネットワーク接続エラー</string>
+    <string name="service_top_error_dialog_message">電波状況の良いところでお使いください</string>
+    <string name="service_top_error_dialog_button">閉じる</string>
+
+    <string name="service_top_menu_title">M E N U</string>
+
+    <string name="service_top_carousel_image_type_0">0</string>
+    <string name="service_top_carousel_image_type_1">1</string>
+
+    <!-- レイアウトJSON -->
+    <string name="key_appRequirement_latestAppVersion">appRequirement_latestAppVersion</string>
+    <string name="key_appRequirement_latestAppUpdate">appRequirement_latestAppUpdate</string>
+    <string name="key_appMaintenance_maintenance">appMaintenance_maintenance</string>
+    <!--appConfig-->
+    <string name="key_appConfig_timeout_defaultTimeoutSec">appConfig_timeout_defaultTimeoutSec</string>
+    <string name="key_appConfig_timeout_WebViewTimeoutSec">appConfig_timeout_WebViewTimeoutSec</string>
+    <!--appLogin-->
+    <string name="key_appLogin_tutorial_href">appLogin_tutorial_href</string>
+    <string name="key_appLogin_loginHelp_href">appLogin_loginHelp_href</string>
+    <!--appTop-->
+    <string name="key_appTop_notification1_txt">appTop_notification1_txt</string>
+    <string name="key_appTop_bannerImg_href">appTop_bannerImg_href</string>
+    <string name="key_appTop_bannerImg_src">appTop_bannerImg_src</string>
+    <string name="key_appTop_bannerImg_sso">appTop_bannerImg_sso</string>
+    <string name="key_appTop_bannerImg_txt">appTop_bannerImg_txt</string>
+    <string name="key_appTop_notification2_href">appTop_notification2_href</string>
+    <string name="key_appTop_notification2_txt">appTop_notification2_txt</string>
+    <string name="key_appTop_event_popup_banner">appTop_event_popup_banner</string>
+    <string name="key_appTop_event_popup_button">appTop_event_popup_button</string>
+    <string name="key_appTop_event_popup_href">appTop_event_popup_href</string>
+    <string name="key_appTop_event_popup_disable_showonce">appTop_event_popup_disable_showonce</string>
+    <string name="key_appTop_event_popup_sso">appTop_event_popup_sso</string>
+    <string name="key_appTop_event_popup_view">appTop_event_popup_view</string>
+    <string name="key_appTop_ticketInsurance_href">appTop_ticketInsurance_href</string>
+    <string name="key_appTop_ticketInsurance_sso">appTop_ticketInsurance_sso</string>
+    <string name="key_appTop_ticketInsurance_view">appTop_ticketInsurance_view</string>
+    <string name="key_appTop_ticketLeisure_href">appTop_ticketLeisure_href</string>
+    <string name="key_appTop_ticketLeisure_sso">appTop_ticketLeisure_sso</string>
+    <string name="key_appTop_ticketLeisure_view">appTop_ticketLeisure_view</string>
+    <string name="key_appTop_ticketLucky_href">appTop_ticketLucky_href</string>
+    <string name="key_appTop_ticketLucky_sso">appTop_ticketLucky_sso</string>
+    <string name="key_appTop_ticketLucky_view">appTop_ticketLucky_view</string>
+    <string name="key_appTop_ticketMovie_href">appTop_ticketMovie_href</string>
+    <string name="key_appTop_ticketMovie_sso">appTop_ticketMovie_sso</string>
+    <string name="key_appTop_ticketMovie_view">appTop_ticketMovie_view</string>
+    <string name="key_appTop_coupon_href">appTop_coupon_href</string>
+    <string name="key_appTop_coupon_sso">appTop_coupon_sso</string>
+    <string name="key_appTop_coupon_view">appTop_coupon_view</string>
+    <string name="key_appTop_present_href">appTop_present_href</string>
+    <string name="key_appTop_present_sso">appTop_present_sso</string>
+    <string name="key_appTop_present_view">appTop_present_view</string>
+    <string name="key_appTop_invitation_href">appTop_invitation_href</string>
+    <string name="key_appTop_invitation_sso">appTop_invitation_sso</string>
+    <string name="key_appTop_serviceMusic_href">appTop_serviceMusic_href</string>
+    <string name="key_appTop_serviceMusic_sso">appTop_serviceMusic_sso</string>
+    <string name="key_appTop_serviceMagazine_href">appTop_serviceMagazine_href</string>
+    <string name="key_appTop_serviceMagazine_sso">appTop_serviceMagazine_sso</string>
+    <string name="key_appTop_serviceMagazine_view">appTop_serviceMagazine_view</string>
+    <string name="key_appTop_serviceVideo_href">appTop_serviceVideo_href</string>
+    <string name="key_appTop_serviceVideo_sso">appTop_serviceVideo_sso</string>
+    <string name="key_appTop_serviceVideo_view">appTop_serviceVideo_view</string>
+    <string name="key_appTop_topics">appTop_topics</string>
+    <string name="key_appTop_topics_contents">appTop_topics_contents</string>
+    <string name="key_appTop_pickup1_href">appTop_pickup1_href</string>
+    <string name="key_appTop_pickup1_category_name">appTop_pickup1_category_name</string>
+    <string name="key_appTop_pickup1_category_color">appTop_pickup1_category_color</string>
+    <string name="key_appTop_pickup1_src">appTop_pickup1_src</string>
+    <string name="key_appTop_pickup1_sso">appTop_pickup1_sso</string>
+    <string name="key_appTop_pickup1_title">appTop_pickup1_title</string>
+    <string name="key_appTop_pickup2_href">appTop_pickup2_href</string>
+    <string name="key_appTop_pickup2_category_name">appTop_pickup2_category_name</string>
+    <string name="key_appTop_pickup2_category_color">appTop_pickup2_category_color</string>
+    <string name="key_appTop_pickup2_src">appTop_pickup2_src</string>
+    <string name="key_appTop_pickup2_sso">appTop_pickup2_sso</string>
+    <string name="key_appTop_pickup2_title">appTop_pickup2_title</string>
+    <string name="key_appTop_pickup3_href">appTop_pickup3_href</string>
+    <string name="key_appTop_pickup3_category_name">appTop_pickup3_category_name</string>
+    <string name="key_appTop_pickup3_category_color">appTop_pickup3_category_color</string>
+    <string name="key_appTop_pickup3_src">appTop_pickup3_src</string>
+    <string name="key_appTop_pickup3_sso">appTop_pickup3_sso</string>
+    <string name="key_appTop_pickup3_title">appTop_pickup3_title</string>
+    <string name="key_appTop_pickup4_href">appTop_pickup4_href</string>
+    <string name="key_appTop_pickup4_category_name">appTop_pickup4_category_name</string>
+    <string name="key_appTop_pickup4_category_color">appTop_pickup4_category_color</string>
+    <string name="key_appTop_pickup4_src">appTop_pickup4_src</string>
+    <string name="key_appTop_pickup4_sso">appTop_pickup4_sso</string>
+    <string name="key_appTop_pickup4_title">appTop_pickup4_title</string>
+    <string name="key_appTop_adBannerImg_sso">appTop_adBannerImg_sso</string>
+    <string name="key_appTop_adBannerImg_href">appTop_adBannerImg_href</string>
+    <string name="key_appTop_adBannerImg_src">appTop_adBannerImg_src</string>
+    <!--appHelp-->
+    <string name="key_appHelp_help_href">appHelp_help_href</string>
+    <string name="key_appHelp_help_sso">appHelp_help_sso</string>
+    <string name="key_appHelp_faq_href">appHelp_faq_href</string>
+    <string name="key_appHelp_faq_sso">appHelp_faq_sso</string>
+    <string name="key_appHelp_terms_href">appHelp_terms_href</string>
+    <string name="key_appHelp_terms_sso">appHelp_terms_sso</string>
+    <string name="key_appHelp_policy_href">appHelp_policy_href</string>
+    <string name="key_appHelp_policy_sso">appHelp_terms_sso</string>
+    <!--appSettings-->
+    <string name="key_appSettings_changeSettings_href">appSettings_changeSettings_href</string>
+    <string name="key_appSettings_changeSettings_sso">appSettings_changeSettings_sso</string>
+    <string name="key_appSettings_mypage_href">appSettings_mypage_href</string>
+    <string name="key_appSettings_mypage_sso">appSettings_mypage_sso</string>
+    <!--appNotification-->
+    <string name="key_appNotification_listCount_count">appNotification_listCount_count</string>
+    <string name="key_appNotification_notification_href">appNotification_notification_href</string>
+
+    <string name="account_pay_status">pay_status</string>
+    <string name="account_auth_result">auth_result</string>
+    <string name="account_lcus_no">lcus_no</string>
+    <string name="account_contract_course">contract_course</string>
+
+    <!--hrefを開く際にどのツールを使うか（0：WebView,1：外部ブラウザ）-->
+    <string name="view_open_webview">0</string>
+    <string name="view_open_externalbrowser">1</string>
+
+    <!-- 利用したいサービス -->
+    <string name="fav_service_id_win_rate_up">1</string>
+    <string name="fav_service_id_leisure_ticket">2</string>
+    <string name="fav_service_id_movie_ticket">3</string>
+    <string name="fav_service_id_ticket_guard">4</string>
+    <string name="fav_service_id_coupon">5</string>
+    <string name="fav_service_id_present">6</string>
+    <string name="fav_service_id_music_streaming">7</string>
+    <string name="fav_service_id_free_magazine">8</string>
+    <string name="fav_service_id_video">9</string>
+
+
+    <!-- 都道府県 -->
+    <string name="pref_area_name_hokkaido">北海道</string>
+    <string name="pref_area_name_tohoku">東北</string>
+    <string name="pref_area_name_kanto_koshinetsu">関東・甲信越</string>
+    <string name="pref_area_name_chubu_tokai">中部・東海</string>
+    <string name="pref_area_name_kinki_hokuriku">近畿・北陸</string>
+    <string name="pref_area_name_chugoku_shikoku">中国・四国</string>
+    <string name="pref_area_name_kyusyu_okinawa">九州・沖縄</string>
+    <string name="pref_name_hokkaido">北海道</string>
+    <string name="pref_name_aomori">青森</string>
+    <string name="pref_name_iwate">岩手</string>
+    <string name="pref_name_miyagi">宮城</string>
+    <string name="pref_name_akita">秋田</string>
+    <string name="pref_name_yamagata">山形</string>
+    <string name="pref_name_fukushima">福島</string>
+    <string name="pref_name_ibaraki">茨城</string>
+    <string name="pref_name_tochigi">栃木</string>
+    <string name="pref_name_gunma">群馬</string>
+    <string name="pref_name_saitama">埼玉</string>
+    <string name="pref_name_chiba">千葉</string>
+    <string name="pref_name_tokyo">東京</string>
+    <string name="pref_name_kanagawa">神奈川</string>
+    <string name="pref_name_niigata">新潟</string>
+    <string name="pref_name_toyama">富山</string>
+    <string name="pref_name_ishikawa">石川</string>
+    <string name="pref_name_fukui">福井</string>
+    <string name="pref_name_yamanashi">山梨</string>
+    <string name="pref_name_nagano">長野</string>
+    <string name="pref_name_gihu">岐阜</string>
+    <string name="pref_name_shizuoka">静岡</string>
+    <string name="pref_name_aichi">愛知</string>
+    <string name="pref_name_mie">三重</string>
+    <string name="pref_name_shiga">滋賀</string>
+    <string name="pref_name_kyoto">京都</string>
+    <string name="pref_name_osaka">大阪</string>
+    <string name="pref_name_hyogo">兵庫</string>
+    <string name="pref_name_nara">奈良</string>
+    <string name="pref_name_wakayama">和歌山</string>
+    <string name="pref_name_tottori">鳥取</string>
+    <string name="pref_name_shimane">島根</string>
+    <string name="pref_name_okayama">岡山</string>
+    <string name="pref_name_hiroshima">広島</string>
+    <string name="pref_name_yamaguchi">山口</string>
+    <string name="pref_name_tokushima">徳島</string>
+    <string name="pref_name_kagawa">香川</string>
+    <string name="pref_name_ehime">愛媛</string>
+    <string name="pref_name_kochi">高知</string>
+    <string name="pref_name_fukuoka">福岡</string>
+    <string name="pref_name_saga">佐賀</string>
+    <string name="pref_name_nagasaki">長崎</string>
+    <string name="pref_name_kumamoto">熊本</string>
+    <string name="pref_name_oita">大分</string>
+    <string name="pref_name_miyazaki">宮崎</string>
+    <string name="pref_name_kagoshima">鹿児島</string>
+    <string name="pref_name_okinawa">沖縄</string>
+
+    <string name="pref_id_hokkaido">1</string>
+    <string name="pref_id_aomori">2</string>
+    <string name="pref_id_iwate">3</string>
+    <string name="pref_id_miyagi">4</string>
+    <string name="pref_id_akita">5</string>
+    <string name="pref_id_yamagata">6</string>
+    <string name="pref_id_fukushima">7</string>
+    <string name="pref_id_ibaraki">8</string>
+    <string name="pref_id_tochigi">9</string>
+    <string name="pref_id_gunma">10</string>
+    <string name="pref_id_saitama">11</string>
+    <string name="pref_id_chiba">12</string>
+    <string name="pref_id_tokyo">13</string>
+    <string name="pref_id_kanagawa">14</string>
+    <string name="pref_id_niigata">15</string>
+    <string name="pref_id_yamanashi">16</string>
+    <string name="pref_id_nagano">17</string>
+    <string name="pref_id_gihu">18</string>
+    <string name="pref_id_shizuoka">19</string>
+    <string name="pref_id_aichi">20</string>
+    <string name="pref_id_mie">21</string>
+    <string name="pref_id_toyama">22</string>
+    <string name="pref_id_ishikawa">23</string>
+    <string name="pref_id_fukui">24</string>
+    <string name="pref_id_shiga">25</string>
+    <string name="pref_id_kyoto">26</string>
+    <string name="pref_id_osaka">27</string>
+    <string name="pref_id_hyogo">28</string>
+    <string name="pref_id_nara">29</string>
+    <string name="pref_id_wakayama">30</string>
+    <string name="pref_id_tottori">31</string>
+    <string name="pref_id_shimane">32</string>
+    <string name="pref_id_okayama">33</string>
+    <string name="pref_id_hiroshima">34</string>
+    <string name="pref_id_yamaguchi">35</string>
+    <string name="pref_id_tokushima">36</string>
+    <string name="pref_id_kagawa">37</string>
+    <string name="pref_id_ehime">38</string>
+    <string name="pref_id_kochi">39</string>
+    <string name="pref_id_fukuoka">40</string>
+    <string name="pref_id_saga">41</string>
+    <string name="pref_id_nagasaki">42</string>
+    <string name="pref_id_kumamoto">43</string>
+    <string name="pref_id_oita">44</string>
+    <string name="pref_id_miyazaki">45</string>
+    <string name="pref_id_kagoshima">46</string>
+    <string name="pref_id_okinawa">47</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_close">アプリを閉じる</string>
+    <string name="dialog_close2">閉じる</string>
+    <string name="dialog_retry">リトライ</string>
+    <string name="net_error_title">通信状況の確認</string>
+    <string name="net_error_msg">インターネットに接続できませんでした。電波の届く場所でご利用ください。</string>
+    <string name="policy_url">http://l-tike.com/doc/policy.html</string>
+    <string name="policy_hint"><![CDATA[プライバシーポリシー<br>については<font color=\'#109ad7\'>こちら</font>]]></string>
+
+    <string-array name="sso_url">
+        <item>https://www.hmv.co.jp/login/login/?AUTHTYPE=</item>
+        <item>https://id.lawson.jp/lweb/oa/OA_Authorize.php</item>
+        <item>https://www.hmv.co.jp/login/accesstoken</item>
+    </string-array>
+
+    <string name="sso_login_url">https://www.hmv.co.jp/login/login/</string>
+    <string name="sso_logout_url">https://www.hmv.co.jp/login/authout/</string>
+
+</resources>

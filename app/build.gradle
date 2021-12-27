@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+
+def VERSION_CODE = 58
+def VERSION_NAME = "2.0.19"
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '28.0.3'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 30
+        versionCode VERSION_CODE
+        versionName VERSION_NAME
+        applicationId 'jp.co.lawson.lhe.PremiumMember'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+    }
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        develop {
+            // 開発用
+            buildConfigField "String", "LAYOUT_NAME", "\"layout2.json\""
+        }
+        staging {
+            // DTS検証用
+            buildConfigField "String", "LAYOUT_NAME", "\"app2_test.json\""
+        }
+        product {
+            // 本番用
+            buildConfigField "String", "LAYOUT_NAME", "\"app2.json\""
+        }
+    }
+}
+android.applicationVariants.all {
+    variant ->
+        variant.outputs.all {
+            def revisionHash = ["sh", "-c", "cd ${project.rootDir} ; git rev-parse --short HEAD"].execute().in.text.trim()
+            outputFileName = "${outputFileName}".replace("-release.apk","")+"-${variant.versionName}-"+revisionHash+".apk"
+        }
+
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation(name: 'funnel-push-android-Android SDK FCM 1.2.4', ext: 'aar')
+    implementation 'com.squareup:otto:1.3.8'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.android.support:design:28.+'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.0'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.android.support:gridlayout-v7:28.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.5'
+    implementation 'com.android.support:gridlayout-v7:28.0.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.jakewharton:butterknife:9.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0'
+    implementation 'com.github.kuangwen-android:android-menudrawer:3.0.7'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.github.kuangwen-android:BadgeView:1.1.6'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.kuangwen-android:CircularImageView:4.0.4'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation("com.github.bumptech.glide:glide:4.8.0") {
+        exclude group: "com.android.support"
+    }
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.firebase:firebase-firestore:19.0.0'
+    implementation 'com.google.firebase:firebase-auth:17.0.0'
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.jakewharton.butterknife'

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "51030851599",
+    "firebase_url": "https://lhp-android-stg.firebaseio.com",
+    "project_id": "lhp-android-stg",
+    "storage_bucket": "lhp-android-stg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51030851599:android:1197bd78235f43b7",
+        "android_client_info": {
+          "package_name": "jp.co.lawson.lhe.PremiumMember"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51030851599-b79pk140sehsg9ft8ougej4tp7qrah4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxEHPH3hSKADBROsyH5c4q7rVkHdgA2pU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
